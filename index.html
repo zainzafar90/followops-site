@@ -9,7 +9,7 @@
   <style>
     :root {
       --accent: #2f6feb; --accent-hover: #255ccc;
-      --text: #16181d; --text-dim: #6b7280; --text-faint: #9aa1ad;
+      --text: #16181d; --text-dim: #5b626e; --text-faint: #6f7683;
       --surface: #ffffff; --surface-subtle: #f7f8fa; --border: #e0e3e9; --hairline: #f2f4f7;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -82,7 +82,11 @@
           <a class="btn btn-ghost" href="/privacy/">Read the privacy policy</a>
         </div>
         <div class="local-note mono">Local-first · No account · No cloud · No tracking</div>
-        <div class="shot"><img src="/assets/today.png" alt="FollowOps Today view showing overdue, today, and tomorrow follow-up groups" width="1280" height="800"></div>
+        <div class="shot"><img src="/assets/today.webp"
+             srcset="/assets/today-760.webp 760w, /assets/today.webp 1280w"
+             sizes="(max-width: 1028px) 100vw, 980px"
+             fetchpriority="high" decoding="async"
+             alt="FollowOps Today view showing overdue, today, and tomorrow follow-up groups" width="1280" height="800"></div>
       </div>
 
       <section class="demo" id="demo">
@@ -90,7 +94,7 @@
         <p class="demo-sub">Under four minutes, recorded end to end in the extension — capture from an email, work the Today list, search across properties, and the reminders that keep it moving.</p>
         <div class="demo-frame">
           <video controls preload="none" playsinline width="1920" height="1080"
-                 poster="/assets/walkthrough-poster.jpg"
+                 poster="/assets/walkthrough-poster.webp"
                  aria-label="FollowOps product walkthrough covering capture, the Today list, search, contacts and reminders">
             <source src="/assets/walkthrough.mp4" type="video/mp4">
           </video>
