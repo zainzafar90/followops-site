@@ -39,6 +39,12 @@
     .local-note { margin-top: 14px; font-size: 12px; color: var(--text-faint); letter-spacing: .06em; text-transform: uppercase; }
     .shot { margin: 56px auto 0; max-width: 980px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px -24px rgba(22,24,29,.25); }
     .shot img { display: block; width: 100%; height: auto; }
+    section.demo { padding: 64px 0 0; }
+    .demo h2 { font-size: 24px; letter-spacing: -0.015em; text-align: center; }
+    .demo .demo-sub { margin: 12px auto 0; max-width: 560px; text-align: center; font-size: 14.5px; line-height: 1.6; color: var(--text-dim); }
+    .demo-frame { margin: 28px auto 0; max-width: 980px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px -24px rgba(22,24,29,.25); background: #0f1216; }
+    .demo-frame video { display: block; width: 100%; height: auto; }
+    .demo-note { margin-top: 12px; text-align: center; font-size: 12px; color: var(--text-faint); letter-spacing: .04em; }
     section.features { padding: 72px 0; }
     .features h2, .privacy h2 { font-size: 24px; letter-spacing: -0.015em; text-align: center; }
     .grid { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
@@ -78,6 +84,19 @@
         <div class="local-note mono">Local-first · No account · No cloud · No tracking</div>
         <div class="shot"><img src="/assets/today.png" alt="FollowOps Today view showing overdue, today, and tomorrow follow-up groups" width="1280" height="800"></div>
       </div>
+
+      <section class="demo" id="demo">
+        <h2>See it in action</h2>
+        <p class="demo-sub">Under four minutes, recorded end to end in the extension — capture from an email, work the Today list, search across properties, and the reminders that keep it moving.</p>
+        <div class="demo-frame">
+          <video controls preload="none" playsinline width="1920" height="1080"
+                 poster="/assets/walkthrough-poster.jpg"
+                 aria-label="FollowOps product walkthrough covering capture, the Today list, search, contacts and reminders">
+            <source src="/assets/walkthrough.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="demo-note mono">3 min 46 s · nothing loads until you press play</p>
+      </section>
 
       <section class="features">
         <h2>Built for the chase</h2>
